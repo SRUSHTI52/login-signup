@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+
+       #bck{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 0;
+       }
+
+       h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: azure;
+        /* text-align: center; */
+        /* justify-content: center; */
+        left: 35%;
+        font-size:500%;
+        position: absolute;
+        z-index: 1;
+        
+       }
+
+       #new{
+        position: absolute;
+        top: 20%;
+        opacity: 80%;
+        background-color: rgb(197, 224, 247);
+        height: 0.5%;
+        width: 50%;
+        left: 20%;
+        animation: back 3s ease-in 3s infinite normal both;
+       }
+       #new2{
+        position: absolute;
+        top: 22%;
+        opacity: 80%;
+        background-color: rgb(197, 224, 247);
+        height: 0.3%;
+        width: 50%;
+        left: 25%;
+        animation: for 3s ease-in 3s infinite normal both;
+       }
+
+       .email{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 130%;
+       }
+
+       .email2{
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        height: 10px;
+        text-decoration: none;
+        overflow: hidden;
+       }
+
+       .pwd{
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 130%;
+       }
+       
+       .pwd2{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        height: 10px;
+        overflow: hidden;
+       }
+
+       .pwd3{
+        position: absolute;
+        top: 55%;
+        left: 25%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 130%;
+       }
+       .pwd4{
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        height: 10px;
+        overflow: hidden;
+       }
+
+       /* #forgot{
+        position: absolute;
+        top: 63%;
+        left: 44%;
+        color: aliceblue;
+       } */
+
+       #sep{
+        position: absolute;
+        top: 68%;
+        left: 30%;
+        color: rgb(255, 255, 51);
+        font-size: 150%;
+       }
+
+       #fb{
+        position: absolute;
+        top: 75%;
+        left: 25%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        width: 8%;
+     
+       }
+       
+       #g{
+        position: absolute;
+        top: 83%;
+        left: 25%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        width: 8%;
+       }
+
+       #fbimg{
+        position: absolute;
+        left: 110px;
+        height: 20px;
+        width: 20px;
+       }
+
+       #gimg{
+        position: absolute;
+        left: 110px;
+        height: 25px;
+        width: 20px;
+       }
+
+       #s{
+         position: absolute;
+         top: 78%;
+         left: 39%;
+         font-size: 120%;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+
+       .b1{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+        top: 15%;
+        left: 92%;
+        
+       }
+       .b2{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;  
+        top: 25%;
+        left: 92%;
+        
+       }
+       .b3{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+        
+        top: 35%;
+        left: 92%;
+        
+       }
+       .b4{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+        
+        top: 45%;
+        left: 92%;
+        
+       }
+       .b5{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+        
+        top: 55%;
+        left: 92%;
+        
+       }
+       .b6{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+        
+        top: 65%;
+        left: 92%;
+        
+       }
+       .c1{
+        border: 3px solid #ffff00 ;
+        box-shadow: inset 0px 0px 18px 0px #ffff00  ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+        top: 75%;
+        left: 92%;
+       }
+       a{
+        color: black;
+       }
+       a:hover{
+        color: rgb(27, 27, 115)
+       }
+       a:visited{
+        color: rgb(71, 71, 124);
+       }
+       @media (max-width:300px) {
+             h1{
+                left: 10%;
+                font-size:190%;
+             }
+             #new{
+                top:10%
+             }
+             #new2{
+                top: 11%;
+             }
+             .email{
+                top: 15%;
+                left: 10%;
+             }
+             .email2{
+                top: 21%;
+                left: 10%;
+             }
+             .pwd{
+                top: 30%;
+                left: 10%;
+             }
+             .pwd2{
+                top: 36%;
+                left: 10%;
+             }
+             .pwd3{
+                top: 44%;
+                left: 10%;
+             }
+             .pwd4{
+                top: 50%;
+                left: 10%;
+             }
+             #forgot{
+                top: 50%;
+                left: 15%;
+             }
+             #sep{
+                top: 55%;
+                left: 6%;
+             }
+             #fb{
+                top: 60%;
+                left: 10%;
+                width: 50%;
+             }
+             #g{
+                top: 66%;
+                left: 10%;
+                width: 50%;
+             }
+             #s{
+                top: 75%;
+                left: 10%;
+             }
+            }
+
+
+       /* @keyframes demo {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: blue;
+            }
+        } */
+        /* animation: demo 5s ease-in 1s infinite normal both; */
+        @keyframes for {
+            from{
+                 
+            }
+            to{
+                 transform: translateX(300px);
+            }
+            
+        }
+
+        @keyframes back {
+            from{
+                 
+            }
+            to{
+                 transform: translateX(-300px);
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <h1>SIGN-UP PAGE</h1></div>
+    <div>
+        <img id="bck"src="https://i.pinimg.com/736x/5e/59/3f/5e593f6c01037d1ef121d4be0e1354f2.jpg">
+    </div >
+    <div id="new"></div>
+    <div id="new2"></div>
+    <!-- <label for="COMMENTS">KINDLY EXPRESS YOUR VIEWS HERE!!</label>
+                <textarea  id="COMMENTS" name="COMMENTS" rows="4" cols="50"></textarea> -->
+    <div>
+        <label class="email "for="email">Enter your email address : </label>
+        <div><textarea class="email2" name="email"></textarea></div>
+    </div>
+    <div>
+        <label class="pwd "for="pwd">Create your password : </label>
+        <div><textarea class="pwd2" name="pwd"></textarea></div>
+    </div>
+    <div>
+        <label class="pwd3"for="pwd">Confirm your password : </label>
+        <div><textarea class="pwd4" name="pwd"></textarea></div>
+    </div>
+    <!-- <div id="forgot">Forgot Password?</div> -->
+    <div id="sep">
+       ------------- OR --------------
+    </div>
+    <div id="fb">
+        <img id=
+        "fbimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png">
+        Continue with 
+    </div>
+    <div id="g">
+        <img id="gimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAl5mLwB3JSyupYBADlbmWqFA-rsT2cr2XEwFcPjnk8Q&s">
+        Continue with
+    </div>
+    <div id="s">
+        Already have an account?
+        
+            <div><a href="login_page.html">👉Login Now</a></div>
+        
+    </div>
+    <div>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="b5"></div>
+        <div class="b6"></div>
+        <div class="c1"></div>
+    </div>
+</div>
+    <script>
+
+    </script>
+</body>
+</html>

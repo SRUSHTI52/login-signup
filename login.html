@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
-      
-       
+    .container{position: absolute;}
        #bck{
         width: 100%;
         height: 100%;
@@ -16,24 +15,16 @@
         top: 0;
         bottom: 0;
         right: 0;
-        position: absolute;
         z-index: 0;
        }
-
        h1{
         font-family: 'Courier New', Courier, monospace;
         color: azure;
-        /* text-align: center; */
-        /* justify-content: center; */
         left: 35%;
         font-size:500%;
-        position: absolute;
         z-index: 1;
-        
        }
-
        #new{
-        position: absolute;
         top: 20%;
         opacity: 80%;
         background-color: rgb(197, 224, 247);
@@ -43,7 +34,6 @@
         animation: back 3s ease-in 3s infinite normal both;
        }
        #new2{
-        position: absolute;
         top: 22%;
         opacity: 80%;
         background-color: rgb(197, 224, 247);
@@ -52,9 +42,7 @@
         left: 25%;
         animation: for 3s ease-in 3s infinite normal both;
        }
-
        .email{
-        position: absolute;
         top: 30%;
         left: 25%;
         background-color: rgb(175, 214, 249);
@@ -62,9 +50,7 @@
         border-radius: 10px;
         font-size: 130%;
        }
-
        .email2{
-        position: absolute;
         top: 35%;
         left: 40%;
         background-color: rgb(175, 214, 249);
@@ -73,20 +59,16 @@
         overflow: hidden;
         height: 10px;
        }
-
        .pwd{
-        position: absolute;
-        top: 50%;
+        top: 45%;
         left: 25%;
         background-color: rgb(175, 214, 249);
         padding: 10px;
         border-radius: 10px;
         font-size: 130%;
        }
-       
        .pwd2{
-        position: absolute;
-        top: 55%;
+        top: 50%;
         left: 40%;
         background-color: rgb(175, 214, 249);
         padding: 10px;
@@ -94,142 +76,73 @@
         overflow: hidden;
         height: 10px;
        }
-
        #forgot{
-        position: absolute;
-        top: 63%;
-        left: 44%;
+        top: 55%;
+        left: 46%;
         color: aliceblue;
        }
-
        #sep{
-        position: absolute;
         top: 68%;
         left: 30%;
         color: rgb(255, 255, 51);
         font-size: 150%;
        }
-
+       .ne{
+        left: 25%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        width: 8%;
+       }
        #fb{
-        position: absolute;
         top: 75%;
-        left: 25%;
-        background-color: rgb(175, 214, 249);
-        padding: 10px;
-        border-radius: 10px;
-        width: 8%;
-     
        }
-       
        #g{
-        position: absolute;
         top: 83%;
-        left: 25%;
-        background-color: rgb(175, 214, 249);
-        padding: 10px;
-        border-radius: 10px;
-        width: 8%;
        }
-
-       #fbimg{
-        position: absolute;
+       #fbimg, #gimg{
         left: 110px;
         height: 20px;
         width: 20px;
        }
-
-       #gimg{
-        position: absolute;
-        left: 110px;
-        height: 25px;
-        width: 20px;
-       }
-
        #s{
-         position: absolute;
          top: 78%;
          left: 39%;
          font-size: 120%;
          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
        }
-
-       .b1{
+       .me{
         border: 3px solid #ffff00;
         box-shadow: inset 0px 0px 18px 0px #ffff00 ;
-        position: absolute;
         height: 80px;
         width: 80px;
         border-radius: 50px;
+       }
+       .b1{
         top: 15%;
         left: 92%;
-        
        }
-       .b2{
-        border: 3px solid #ffff00;
-        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-radius: 50px;  
+       .b2{  
         top: 25%;
         left: 92%;
-        
        }
        .b3{
-        border: 3px solid #ffff00;
-        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-radius: 50px;
-        
         top: 35%;
         left: 92%;
-        
        }
        .b4{
-        border: 3px solid #ffff00;
-        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-radius: 50px;
-        
         top: 45%;
         left: 92%;
-        
        }
        .b5{
-        border: 3px solid #ffff00;
-        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-radius: 50px;
-        
         top: 55%;
         left: 92%;
-        
        }
        .b6{
-        border: 3px solid #ffff00;
-        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-radius: 50px;
-        
         top: 65%;
         left: 92%;
-        
        }
        .c1{
-        border: 3px solid #ffff00 ;
-        box-shadow: inset 0px 0px 18px 0px #ffff00  ;
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-radius: 50px;
         top: 75%;
         left: 92%;
        }
@@ -241,6 +154,16 @@
        }
        a:visited{
         color: rgb(71, 71, 124);
+       }
+      .btn-login{
+        width:90px ;
+        height: 50px;
+        top: 60%;
+        left: 35%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 130%;
        }
        @media (max-width:300px) {
              h1{
@@ -293,16 +216,14 @@
              }
             }
         @keyframes for {
-            from{
-                 
+            from{    
             }
             to{
                  transform: translateX(300px);
             }
         }
         @keyframes back {
-            from{
-                 
+            from{   
             }
             to{
                  transform: translateX(-300px);
@@ -319,26 +240,27 @@
     </div >
     <div id="new"></div>
     <div id="new2"></div>
-    <!-- <label for="COMMENTS">KINDLY EXPRESS YOUR VIEWS HERE!!</label>
-                <textarea  id="COMMENTS" name="COMMENTS" rows="4" cols="50"></textarea> -->
     <div>
         <label class="email "for="email">Enter your email address : </label>
-        <div><textarea class="email2" name="email" rows="2"></textarea></div>
+        <div><input class="email2" id="login_email" name="email" type="email" required></div>
     </div>
     <div>
         <label class="pwd "for="pwd">Enter your password : </label>
-        <div><textarea class="pwd2" name="pwd" rows="2"></textarea></div>
+        <input class="pwd2" id="login_password" name="pwd" type="password" required>
     </div>
     <div id="forgot">Forgot Password?</div>
+    <div class="input-block" id="login">
+        <button type="submit" class="btn-login">Login</button>
+    </div>
     <div id="sep">
        ------------- OR --------------
     </div>
-    <div id="fb">
+    <div class="ne" id="fb">
         <img id=
         "fbimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png">
         Continue with 
     </div>
-    <div id="g">
+    <div class="ne" id="g">
         <img id="gimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAl5mLwB3JSyupYBADlbmWqFA-rsT2cr2XEwFcPjnk8Q&s">
         Continue with
     </div>
@@ -348,7 +270,7 @@
             <div><a href="sign_up_page.html">👉Sign Up Now</a></div>
         </div>
     </div>
-    <div>
+    <div class="me">
         <div class="b1"></div>
         <div class="b2"></div>
         <div class="b3"></div>
@@ -358,8 +280,37 @@
         <div class="c1"></div>
     </div>
 </div>
-    <script>
-
-    </script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+const firebaseConfig = {
+    apiKey: "AIzaSyB8NlpwgWVB92OG_3oHd5SBEoKcfZ_2ZSs",
+    authDomain: "login-signin-c1259.firebaseapp.com",
+    projectId: "login-signin-c1259",
+    storageBucket: "login-signin-c1259.appspot.com",
+    messagingSenderId: "520742422427",
+    appId: "1:520742422427:web:7714cc8304f676ab10833e",
+    measurementId: "G-9Z7FZDEXYL"
+  };
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const auth = getAuth();  
+   document.getElementById("login").addEventListener("click", function() {
+    var email =  document.getElementById("login_email").value;
+    var password = document.getElementById("login_password").value;
+    signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      console.log(user);
+      alert(user.email + " Login successfully!!!");
+    })
+    .catch((error) => {
+      const errorMessage = error.message;
+      console.log(errorMessage);
+      alert(errorMessage);
+    });		  		  
+  });
+  </script>
 </body>
 </html>

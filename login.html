@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
-    .container{position: absolute;}
        #bck{
         width: 100%;
         height: 100%;
@@ -15,16 +14,24 @@
         top: 0;
         bottom: 0;
         right: 0;
+        position: absolute;
         z-index: 0;
        }
+
        h1{
         font-family: 'Courier New', Courier, monospace;
         color: azure;
+        /* text-align: center; */
+        /* justify-content: center; */
         left: 35%;
         font-size:500%;
+        position: absolute;
         z-index: 1;
+
        }
+
        #new{
+        position: absolute;
         top: 20%;
         opacity: 80%;
         background-color: rgb(197, 224, 247);
@@ -34,6 +41,7 @@
         animation: back 3s ease-in 3s infinite normal both;
        }
        #new2{
+        position: absolute;
         top: 22%;
         opacity: 80%;
         background-color: rgb(197, 224, 247);
@@ -43,6 +51,7 @@
         animation: for 3s ease-in 3s infinite normal both;
        }
        .email{
+        position: absolute;
         top: 30%;
         left: 25%;
         background-color: rgb(175, 214, 249);
@@ -50,7 +59,9 @@
         border-radius: 10px;
         font-size: 130%;
        }
+
        .email2{
+        position: absolute;
         top: 35%;
         left: 40%;
         background-color: rgb(175, 214, 249);
@@ -59,7 +70,9 @@
         overflow: hidden;
         height: 10px;
        }
+
        .pwd{
+        position: absolute;
         top: 45%;
         left: 25%;
         background-color: rgb(175, 214, 249);
@@ -67,7 +80,9 @@
         border-radius: 10px;
         font-size: 130%;
        }
+
        .pwd2{
+        position: absolute;
         top: 50%;
         left: 40%;
         background-color: rgb(175, 214, 249);
@@ -76,73 +91,144 @@
         overflow: hidden;
         height: 10px;
        }
-       #forgot{
+
+       #forgot_password{
+        position: absolute;
+        top: 63%;
+        left: 44%;
         top: 55%;
         left: 46%;
         color: aliceblue;
+        cursor: pointer;
        }
+
        #sep{
+        position: absolute;
         top: 68%;
         left: 30%;
         color: rgb(255, 255, 51);
         font-size: 150%;
        }
-       .ne{
+
+       #fb{
+        position: absolute;
+        top: 75%;
+        left: 25%;
+        background-color: rgb(175, 214, 249);
+        padding: 10px;
+        border-radius: 10px;
+        width: 8%;
+
+       }
+       #g{
+        position: absolute;
+        top: 83%;
         left: 25%;
         background-color: rgb(175, 214, 249);
         padding: 10px;
         border-radius: 10px;
         width: 8%;
        }
-       #fb{
-        top: 75%;
-       }
-       #g{
-        top: 83%;
-       }
-       #fbimg, #gimg{
+
+       #fbimg{
+        position: absolute;
         left: 110px;
         height: 20px;
         width: 20px;
        }
+
+       #gimg{
+        position: absolute;
+        left: 110px;
+        height: 25px;
+        width: 20px;
+       }
+
        #s{
+         position: absolute;
          top: 78%;
          left: 39%;
          font-size: 120%;
          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
        }
-       .me{
+
+       .b1{
         border: 3px solid #ffff00;
         box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
         height: 80px;
         width: 80px;
         border-radius: 50px;
-       }
-       .b1{
         top: 15%;
         left: 92%;
        }
-       .b2{  
+
+       .b2{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;   
         top: 25%;
         left: 92%;
+
        }
        .b3{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+
         top: 35%;
         left: 92%;
+
        }
        .b4{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+
         top: 45%;
         left: 92%;
+
        }
        .b5{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+
         top: 55%;
         left: 92%;
+
        }
        .b6{
+        border: 3px solid #ffff00;
+        box-shadow: inset 0px 0px 18px 0px #ffff00 ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+
         top: 65%;
         left: 92%;
+
        }
        .c1{
+        border: 3px solid #ffff00 ;
+        box-shadow: inset 0px 0px 18px 0px #ffff00  ;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
         top: 75%;
         left: 92%;
        }
@@ -216,15 +302,13 @@
              }
             }
         @keyframes for {
-            from{    
-            }
+            from{   }
             to{
                  transform: translateX(300px);
             }
         }
         @keyframes back {
-            from{   
-            }
+            from{   }
             to{
                  transform: translateX(-300px);
             }  
@@ -248,7 +332,7 @@
         <label class="pwd "for="pwd">Enter your password : </label>
         <input class="pwd2" id="login_password" name="pwd" type="password" required>
     </div>
-    <div id="forgot">Forgot Password?</div>
+    <div id="forgot_password">Forgot Password?</div>
     <div class="input-block" id="login">
         <button type="submit" class="btn-login">Login</button>
     </div>
@@ -283,7 +367,7 @@
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
-  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+  import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
 const firebaseConfig = {
     apiKey: "AIzaSyB8NlpwgWVB92OG_3oHd5SBEoKcfZ_2ZSs",
     authDomain: "login-signin-c1259.firebaseapp.com",
@@ -296,9 +380,10 @@ const firebaseConfig = {
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const auth = getAuth();  
-   document.getElementById("login").addEventListener("click", function() {
-    var email =  document.getElementById("login_email").value;
+document.getElementById("login").addEventListener("click", function() {
+    var email = document.getElementById("login_email").value;
     var password = document.getElementById("login_password").value;
+    
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
@@ -309,7 +394,21 @@ const firebaseConfig = {
       const errorMessage = error.message;
       console.log(errorMessage);
       alert(errorMessage);
-    });		  		  
+    });
+  });
+  
+  document.getElementById("forgot_password").addEventListener("click", function() {
+    var email = document.getElementById("login_email").value;
+
+    sendPasswordResetEmail(auth, email)
+    .then(() => {
+      alert("Password reset email sent!");
+    })
+    .catch((error) => {
+      const errorMessage = error.message;
+      console.log(errorMessage);
+      alert(errorMessage);
+    });
   });
   </script>
 </body>
